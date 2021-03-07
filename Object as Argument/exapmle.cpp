@@ -9,7 +9,7 @@ class Complex
     public:
         int input();
         int display();
-        int add(Complex c1,Complex c2);
+        void add(Complex c1,Complex c2);
 };
 
 int Complex::input()
@@ -25,7 +25,7 @@ int Complex::display()
     cout<<real<<" + "<<img<<"i."<<endl;
 }
 
-int Complex::add(Complex c1,Complex c2)
+void Complex::add(Complex c1,Complex c2)
 {
     real=c1.real+c2.real;
     img=c1.img+c2.img;
