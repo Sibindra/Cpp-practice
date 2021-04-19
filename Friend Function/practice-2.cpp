@@ -8,47 +8,48 @@ class first
 {
     int a;
 
-    public:
-        int input()
-        {
-            a=2;
-        }
+public:
+    int input()
+    {
+        a = 2;
+    }
 
-        int display()
-        {
-            cout<<"a= "<<a<<endl;
-        }
+    int display()
+    {
+        cout << "a= " << a << endl;
+    }
 
-    friend int swap(first f,second s);
+    friend int swap(first f, second s);
 };
 
 class second
 {
     int b;
 
-    public:
-        int input()
-        {
-            b=500;
-        }
+public:
+    int input()
+    {
+        b = 500;
+    }
 
-        int display()
-        {
-            cout<<"b= "<<b<<endl;
-        }
+    int display()
+    {
+        cout << "b= " << b << endl;
+    }
 
-    friend int swap(first f,second s);
+    friend int swap(first f, second s);
 };
 
-int swap(first f,second s)
+int swap(first f, second s)
 {
-    int temp=0;
+    int temp = 0;
 
-    temp=f.a;   //temp=2
-    f.a=s.b;    //a=500
-    s.b=temp;   //b=2
+    temp = f.a; //temp=2
+    f.a = s.b;  //a=500
+    s.b = temp; //b=2
 
-    cout<<"a= "<<f.a<<endl<<"b= "<<s.b<<endl;
+    cout << "a= " << f.a << endl
+         << "b= " << s.b << endl;
 }
 
 int main()
@@ -58,9 +59,9 @@ int main()
 
     obj1.input();
     obj2.input();
-    cout<<endl;
+    cout << endl;
     obj1.display();
     obj2.display();
 
-    swap(obj1,obj2);
+    swap(obj1, obj2);
 }
