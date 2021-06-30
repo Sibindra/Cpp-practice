@@ -11,4 +11,5 @@ int main()
     cout<<"The number is:"<<*ptr<<endl;
 
     delete ptr;
+    return 0;
 }
