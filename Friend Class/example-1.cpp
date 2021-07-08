@@ -9,7 +9,7 @@ class one
     int a,b;
 
     public:
-        int input()
+        void input()
         {
             cout<<"Enter any two numbers:"<<endl;
             cin>>a>>b;
@@ -21,9 +21,9 @@ class one
 class two
 {
     public:
-        int display(one o)
+        void display(one o)
         {
-            cout<<"The numbers you entered are: "<<o.a<<" and "<<o.b;
+            cout<<"The numbers you entered are: "<<o.a<<" and "<<o.b<<endl;;
         }
 };
 
